@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | Almohre القصيم وحولها</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Almohre <span>القصيم وحولها</span></a>
+      <button class="menu-toggle" onclick="document.getElementById('mainNav').classList.toggle('show')">☰</button>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="menu.html">القائمة</a></li>
+          <li><a href="about.html">عنّا</a></li>
+          <li><a href="contact.html" class="active">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="section-header">
+      <span class="section-tag">✦ الحجز والاستفسار ✦</span>
+      <h1>تواصل معنا لتنسيق مناسبتك</h1>
+      <p>أدخل تفاصيل المناسبة وسنجهز لك رسالة مرتبة تُرسل مباشرة إلى واتساب الفريق <strong>0594991550</strong>.</p>
+    </div>
+
+    <div class="info-split" style="align-items: start;">
+      <div class="panel-box">
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="name">الاسم الكريم</label>
+            <input type="text" id="name" required placeholder="مثال: أم محمد">
+          </div>
+
+          <div class="form-group">
+            <label for="city">المدينة واسم القاعة في القصيم أو حولها</label>
+            <input type="text" id="city" required placeholder="مثال: بريدة - قاعة ليلتي">
+          </div>
+
+          <div class="form-group">
+            <label for="date">تاريخ المناسبة</label>
+            <input type="date" id="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="service">نوع الخدمة المطلوبة</label>
+            <select id="service">
+              <option value="الجرابات المغلقة">جرابات منع التصوير</option>
+              <option value="سحب الجوالات">سحب الجوالات عند البوابة</option>
+              <option value="ساهر في القاعة">ساهر في القاعة</option>
+              <option value="الجرابات مع ساهر">جرابات منع التصوير + ساهر في القاعة</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="guests">العدد التقديري للمدعوات</label>
+            <input type="number" id="guests" required placeholder="مثال: 200">
+          </div>
+
+          <div class="form-group">
+            <label for="notes">ملاحظات إضافية (اختياري)</label>
+            <textarea id="notes" rows="3" placeholder="مثال: وجود أكثر من بوابة دخول للقاعة"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary-solid">متابعة الإرسال عبر واتساب</button>
+        </form>
+      </div>
+
+      <div class="panel-box">
+        <h3>قنوات التواصل المباشر</h3>
+        <p style="color: var(--text-soft); margin-bottom: 20px;">
+          يسعدنا استقبال استفساراتكم حول توفر المواعيد وتفاصيل التغطية في جميع مدن القصيم والمحافظات المجاورة.
+        </p>
+
+        <ul class="hours-list" style="margin-bottom: 25px;">
+          <li><span>رقم الواتساب</span> <strong dir="ltr">0594991550</strong></li>
+          <li><span>المنطقة</span> <strong>القصيم وحولها (بريدة، عنيزة، الرس، البكيرية، المذنب، الزلفي)</strong></li>
+          <li><span>أوقات الرد</span> <strong>يومياً من 4:00 عصراً حتى 11:30 مساءً</strong></li>
+        </ul>
+
+        <div style="background: var(--peach-pastel); padding: 22px; border-radius: 20px; text-align: center;">
+          <p style="font-weight: 700; margin-bottom: 12px; color: var(--pink-dark);">شاهد تغطياتنا وتجهيزاتنا في القاعات</p>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" class="tiktok-btn">حساب التيك توك @almohre0</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <strong style="font-size: 1.3rem; color: var(--pink-dark);">Almohre</strong>
+        <p style="font-size: 0.95rem; margin-top: 5px;">جرابات منع التصوير، خدمة ساهر، وسحب الجوالات في القصيم وحولها — واتساب: 0594991550</p>
+      </div>
+      <a href="https://tiktok.com" target="_blank" rel="noopener" class="tiktok-btn">حساب التيك توك @almohre0</a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me،%20أرغب%20بالاستفسار%20عن%20خدمات%20Almohre" target="_blank" rel="noopener" class="whatsapp-float">
+    <span>واتساب 0594991550</span>
+  </a>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedService = urlParams.get('service');
+    if (selectedService) {
+      document.getElementById('service').value = selectedService;
+    }
+
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const city = document.getElementById('city').value;
+      const date = document.getElementById('date').value;
+      const service = document.getElementById('service').value;
+      const guests = document.getElementById('guests').value;
+      const notes = document.getElementById('notes').value || "لا يوجد";
+
+      const phone = "966594991550"; 
+      const message = `السلام عليكم، طلب تنسيق مناسبة عبر موقع Almohre:%0A` +
+                      `• الاسم: ${name}%0A` +
+                      `• المدينة والقاعة: ${city}%0A` +
+                      `• التاريخ: ${date}%0A` +
+                      `• الخدمة: ${service}%0A` +
+                      `• العدد التقديري: ${guests}%0A` +
+                      `• ملاحظات: ${notes}`;
+
+      window.open(`https://wa.me{phone}?text=${message}`, '_blank');
+    });
+  </script>
+
+</body>
+</html>

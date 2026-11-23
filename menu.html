@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>القائمة والباقات | Almohre القصيم وحولها</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Almohre <span>القصيم وحولها</span></a>
+      <button class="menu-toggle" onclick="document.getElementById('mainNav').classList.toggle('show')">☰</button>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="menu.html" class="active">القائمة</a></li>
+          <li><a href="about.html">عنّا</a></li>
+          <li><a href="contact.html">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="section-header">
+      <span class="section-tag">✦ الخدمات المتاحة ✦</span>
+      <h1>قائمة خدمات المناسبات</h1>
+      <p>نوفر خيارات متعددة تلائم حجم القاعة وعدد الضيوف في مناسبات الزواج وعقد القران والتخرج.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card" id="pouches">
+        <div>
+          <span class="section-tag">الخدمة الأولى</span>
+          <h3>جرابات منع التصوير</h3>
+          <p>وضع جوال كل ضيفة داخل جراب مخصص يُقفل مغناطيسياً عند الدخول، لتحتفظ بجوالها معها طوال المناسبة دون إمكانية التصوير.</p>
+          <ul class="feature-list">
+            <li>جرابات نظيفة ومبطنة تناسب مختلف المقاسات</li>
+            <li>توفير قواعد الفتح المغناطيسية عند البوابات</li>
+            <li>سرعة عالية في الاستقبال والمغادرة</li>
+            <li>إمكانية الخروج لإجراء مكالمة والعودة بسهولة</li>
+          </ul>
+        </div>
+        <a href="contact.html?service=الجرابات المغلقة" class="btn-primary-solid" style="text-align:center;">طلب هذه الخدمة</a>
+      </div>
+
+      <div class="card" id="pull">
+        <div>
+          <span class="section-tag">الخدمة الثانية</span>
+          <h3>سحب الجوالات عند البوابة</h3>
+          <p>تجهيز ركن استقبال منظم عند مدخل القاعة بإشراف كوادر نسائية لاستلام الجوالات وحفظها بأمان حتى وقت المغادرة.</p>
+          <ul class="feature-list">
+            <li>بطاقات ترقيم مزدوجة ومقاومة للتلف</li>
+            <li>حفظ الجوالات في فواصل مبطنة تمنع الاحتكاك</li>
+            <li>تنظيم انسيابي لتجنب الازدحام عند الخروج</li>
+            <li>عدد موظفات يتناسب مع إجمالي المدعوات</li>
+          </ul>
+        </div>
+        <a href="contact.html?service=سحب الجوالات" class="btn-primary-solid" style="text-align:center;">طلب هذه الخدمة</a>
+      </div>
+
+      <div class="card" id="saher">
+        <div>
+          <span class="section-tag">الخدمة الثالثة</span>
+          <h3>ساهر في القاعة</h3>
+          <p>توزيع مشرفات داخل صالة الاحتفال بزي رسمي أنيق لمتابعة الالتزام بمنع التصوير والتنبيه بلباقة وهدوء طوال ساعات الحفل.</p>
+          <ul class="feature-list">
+            <li>تغطية شاملة لممرات الصالة ومحيط الكوشة</li>
+            <li>تعامل راقٍ وهادئ يحفظ بهجة المناسبة</li>
+            <li>تنسيق مسبق مع أهل العروس أو صاحبة الحفل</li>
+            <li>قابلة للدمج مع جرابات منع التصوير</li>
+          </ul>
+        </div>
+        <a href="contact.html?service=ساهر في القاعة" class="btn-primary-solid" style="text-align:center;">طلب هذه الخدمة</a>
+      </div>
+    </div>
+
+    <div style="max-width: 800px; margin: 70px auto 0;">
+      <div class="section-header">
+        <h2>أسئلة متكررة حول الخدمات</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <span>هل تتوفر مقاسات للجرابات تناسب الجوالات الكبيرة؟</span><span>+</span>
+        </button>
+        <div class="faq-answer">نعم، الجرابات مصممة بمقاس واسع ومبطن يستوعب جميع أحجام الهواتف الذكية الحديثة مع أغطيتها.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <span>كم مدة التواجد في القاعة خلال المناسبة؟</span><span>+</span>
+        </button>
+        <div class="faq-answer">يتواجد الفريق قبل موعد استقبال الضيوف بنصف ساعة لتجهيز البوابة، ويستمر العمل حتى مغادرة المدعوات وانتهاء المناسبة.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <span>هل يمكن الجمع بين الجرابات وخدمة ساهر؟</span><span>+</span>
+        </button>
+        <div class="faq-answer">بكل تأكيد، يختار كثير من أهالي المناسبات دمج الجرابات المغلقة عند البوابة مع تواجد مشرفات ساهر داخل القاعة لمزيد من التنظيم.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <strong style="font-size: 1.3rem; color: var(--pink-dark);">Almohre</strong>
+        <p style="font-size: 0.95rem; margin-top: 5px;">جرابات منع التصوير، خدمة ساهر، وسحب الجوالات في القصيم وحولها — واتساب: 0594991550</p>
+      </div>
+      <a href="https://tiktok.com" target="_blank" rel="noopener" class="tiktok-btn">حساب التيك توك @almohre0</a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me،%20أرغب%20بالاستفسار%20عن%20باقات%20Almohre" target="_blank" rel="noopener" class="whatsapp-float">
+    <span>واتساب 0594991550</span>
+  </a>
+
+</body>
+</html>
